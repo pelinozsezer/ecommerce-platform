@@ -6,6 +6,13 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      colors: {
+        skyblue: "#96E9FB",
+        mintgreen: "#ABECD6",
+      },
+      backgroundImage: {
+        "hero-gradient": "linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%)",
+      },
     },
   },
   plugins: [],

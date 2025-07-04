@@ -58,18 +58,19 @@ export default function NavBarMobile() {
         </div>
 
         {/* Nav links */}
-        <div className="flex flex-col gap-[30px] w-[123px] h-[270px] items-center mt-[109px] self-center">
+        <div className="flex flex-col gap-[30px] h-[270px] items-center mt-[109px] w-full">
           {navLinks.map(({ label, href, width }) => (
             <a
               key={href}
               href={href}
               className={`
-            ${width} h-[45px] opacity-100
-            text-center
-            font-montserrat font-normal text-[30px] leading-[45px] tracking-[0.2px] text-[#737373]
-            flex items-center justify-center
-            hover:text-[#23A6F0] transition-colors
-          `}
+        h-[45px] opacity-100
+        text-center
+        font-montserrat font-normal text-[30px] leading-[45px] tracking-[0.2px] text-[#737373]
+        flex items-center justify-center
+        hover:text-[#23A6F0] transition-colors
+        ${width}
+      `}
             >
               {label}
             </a>
