@@ -1,10 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./layouts/Header";
+
+import HomePage from "./pages/HomePage"; // veya doğru dizin neyse
 
 function App() {
   return (
     <>
-      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   );
 }
